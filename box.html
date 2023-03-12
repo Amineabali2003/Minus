@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Box</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="lib.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-box.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="btn-rouge btn-nav" href="./informations.html">Je commande</a>
+            <ul class="nav_links">
+                <li><a href="./box.html">Nox Box</a></li>
+                <li><a href="#">Nos Recettes</a></li>
+            </ul>
+            <a href="./index.html"><img class="logo" src="images/header_logo.svg" alt="Logo">
+            <ul class="nav_links"></a>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <a href="./connexion.html" class="btn-rouge btn-nav">Mon Minus</a>
+        </nav>
+        <nav>
+            <div class="nav_links1">
+                <a href="./index.html"><img class="logo" src="./images/header_logo.svg"></a>
+                <ul id="Menu_mobile" class="Menu_mobiiile">
+                    <p class="close">&times;</p>
+                    <li><a href="./box.html">Box</a></li>
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <a href="./informations.html"><span>Je commande</span></a>
+                    <a class="btn-vert" href="./connexion.html">Mon Minus</a>
+                </ul>
+                <img class="menu-hamburger" src="./icones/Hamburger_icon.svg.png">
+            </div>
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector("#Menu_mobile")
+        var span = document.getElementsByClassName("close")[0];
+        menuHamburger.onclick = function() {
+            navLinks.style.display = "flex";
+        }
+        span.onclick = function() {
+            navLinks.style.display = "none";
+        }
+</script>
+
+    <div class="banner">
+        <p>Nos Box du moment</p>
+
+    </div>
+    <main>
+        <aside>
+            <div class="box-en-cours">
+                <h3>Ma Box en cours</h3>
+                <div class="box-en-cours-recettes">
+                    <ul>
+                        <li>
+                            <span>Recette 1</span>
+                            <span class="btn-suppr">-</span>
+                        </li>
+                        <li>
+                            <span>Recette 1</span>
+                            <span class="btn-suppr">-</span>
+                        </li>
+                        <li>
+                            <span>Recette 1</span>
+                            <span class="btn-suppr">-</span>
+                        </li>
+                        <li>
+                            <span>Recette 1</span>
+                            <span class="btn-suppr">-</span>
+                        </li>
+                        <li>
+                            <span>Recette 1</span>
+                            <span class="btn-suppr">-</span>
+                        </li>
+                    </ul>
+                    <a href="./informations.html"><span class="btn-rouge"> Valider</span></a>
+                </div>
+            </div>
+            <div class="box-filter">
+                <h3>Âge</h3>
+                <ul>
+                    <li>
+                        <label for="2-3ans">2 - 3 ans</label>
+                        <input type="checkbox" name="2-3ans" id="2-3ans">
+                    </li>
+                    <li>
+                        <label for="3-4ans">3 - 4 ans</label>
+                        <input type="checkbox" name="3-4ans" id="3-4ans">
+                    </li>
+                    <li>
+                        <label for="4-6ans">4 - 6 ans</label>
+                        <input type="checkbox" name="4-6ans" id="4-6ans">
+                    </li>
+                    <li>
+                        <label for="6-7ans">6 - 7ans</label>
+                        <input type="checkbox" name="6-7ans" id="6-7ans">
+                    </li>
+                </ul>
+                <h3>Allergènes</h3>
+                <ul>
+                    <li>
+                        <label for="oeufs">sans oeufs</label>
+                        <input type="checkbox" name="oeufs" id="oeufs">
+                    </li>
+                    <li>
+                        <label for="gluten">sans gluten</label>
+                        <input type="checkbox" name="gluten" id="gluten">
+                    </li>
+                    <li>
+                        <label for="soja">sans soja</label>
+                        <input type="checkbox" name="soja" id="soja">
+                    </li>
+                    <li>
+                        <label for="noix">sans noix</label>
+                        <input type="checkbox" name="noix" id="noix">
+                    </li>
+                    <li>
+                        <label for="arachide">sans arachide</label>
+                        <input type="checkbox" name="arachide" id="arachide">
+                    </li>
+                </ul>
+                <h3>Préférences alimentaires</h3>
+                <ul>
+                    <li>
+                        <label for="omnivore">Omnivore</label>
+                        <input type="checkbox" name="omnivore" id="omnivore">
+                    </li>
+                    <li>
+                        <label for="flexitarien">Flexitarien</label>
+                        <input type="checkbox" name="flexitarien" id="flexitarien">
+                    </li>
+                    <li>
+                        <label for="piscivore">Piscivore</label>
+                        <input type="checkbox" name="piscivore" id="piscivore">
+                    </li>
+                    <li>
+                        <label for="vegetarien">Végétarien</label>
+                        <input type="checkbox" name="vegetarien" id="vegetarien">
+                    </li>
+                    <li>
+                        <label for="bio">Bio</label>
+                        <input type="checkbox" name="bio" id="bio">
+                    </li>
+                </ul>
+                <h3>Temps de préparation</h3>
+                <ul>
+                    <li>
+                        <label for="quart"> < 15min </label>
+                        <input type="checkbox" name="quart" id="quart">
+                    </li>
+                    <li>
+                        <label for="demi">15min - 30min</label>
+                        <input type="checkbox" name="demi" id="demi">
+                    </li>
+                    <li>
+                        <label for="heure">30min - 1h</label>
+                        <input type="checkbox" name="heure" id="heure">
+                    </li>
+                    <li>
+                        <label for="plus">> 1h</label>
+                        <input type="checkbox" name="plus" id="plus">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content">
+            <button onclick="on()" class="btn-vert filtres">
+                <span>Filtres</span>
+                <img src="images/logo-filtres.svg" alt="filtres">
+            </button>
+            <fieldset>
+                <legend>Suggestion de la semaine</legend>
+                <div class="box-card">
+                    <div class="box-card-content">
+                        <div class="box-card-left">
+                            <div class="box-card-title">
+                                <h3>Box Tex-Mex</h3>
+                                <span class="btn-add">+</span>
+                            </div>
+                            <p>Une box qui adapte les saveurs du sud du continent nord-américain pour les papilles de nos enfants. Découvertes garanties !</p>
+                            <div class="box-card-meal-container">
+                                <div class="box-card-meal">
+                                    <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                    <div class="box-card-meal-text">
+                                        <div class="box-card-meal-title">
+                                            <h3>Recette 3</h3>
+                                            <p>Description rapide de la recette.</p>
+                                        </div>
+                                        <div class="box-card-meal-bottom">
+                                            <span>15 min |</span>
+                                            <div class="box-card-meal-tags">
+                                                <ul>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn-add add-meal">+</span>
+                            </div>
+                            <div class="box-card-meal-container">
+                                <div class="box-card-meal">
+                                    <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                    <div class="box-card-meal-text">
+                                        <div class="box-card-meal-title">
+                                            <h3>Recette 3</h3>
+                                            <p>Description rapide de la recette.</p>
+                                        </div>
+                                        <div class="box-card-meal-bottom">
+                                            <span>15 min |</span>
+                                            <div class="box-card-meal-tags">
+                                                <ul>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn-add add-meal">+</span>
+                            </div>
+                        </div>
+                        <div class="box-card-right">                     
+                            <div class="box-card-meal-container">
+                                <div class="box-card-meal">
+                                    <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                    <div class="box-card-meal-text">
+                                        <div class="box-card-meal-title">
+                                            <h3>Recette 3</h3>
+                                            <p>Description rapide de la recette.</p>
+                                        </div>
+                                        <div class="box-card-meal-bottom">
+                                            <span>15 min |</span>
+                                            <div class="box-card-meal-tags">
+                                                <ul>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn-add add-meal">+</span>
+                            </div>
+                            <div class="box-card-meal-container">
+                                <div class="box-card-meal">
+                                    <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                    <div class="box-card-meal-text">
+                                        <div class="box-card-meal-title">
+                                            <h3>Recette 3</h3>
+                                            <p>Description rapide de la recette.</p>
+                                        </div>
+                                        <div class="box-card-meal-bottom">
+                                            <span>15 min |</span>
+                                            <div class="box-card-meal-tags">
+                                                <ul>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn-add add-meal">+</span>
+                            </div>
+                            <div class="box-card-meal-container">
+                                <div class="box-card-meal">
+                                    <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                    <div class="box-card-meal-text">
+                                        <div class="box-card-meal-title">
+                                            <h3>Recette 3</h3>
+                                            <p>Description rapide de la recette.</p>
+                                        </div>
+                                        <div class="box-card-meal-bottom">
+                                            <span>15 min |</span>
+                                            <div class="box-card-meal-tags">
+                                                <ul>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                    <li>tag</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn-add add-meal">+</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="box-card lower-card">
+                <div class="box-card-content">
+                    <div class="box-card-left">
+                        <div class="box-card-title">
+                            <h3>Box Tex-Mex</h3>
+                            <span class="btn-add">+</span>
+                        </div>
+                        <p>Une box qui adapte les saveurs du sud du continent nord-américain pour les papilles de nos enfants. Découvertes garanties !</p>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                    </div>
+                    <div class="box-card-right">                     
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-card lower-card">
+                <div class="box-card-content">
+                    <div class="box-card-left">
+                        <div class="box-card-title">
+                            <h3>Box Tex-Mex</h3>
+                            <span class="btn-add">+</span>
+                        </div>
+                        <p>Une box qui adapte les saveurs du sud du continent nord-américain pour les papilles de nos enfants. Découvertes garanties !</p>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                    </div>
+                    <div class="box-card-right">                     
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-card lower-card">
+                <div class="box-card-content">
+                    <div class="box-card-left">
+                        <div class="box-card-title">
+                            <h3>Box Tex-Mex</h3>
+                            <span class="btn-add">+</span>
+                        </div>
+                        <p>Une box qui adapte les saveurs du sud du continent nord-américain pour les papilles de nos enfants. Découvertes garanties !</p>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                    </div>
+                    <div class="box-card-right">                     
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+                        <div class="box-card-meal-container">
+                            <div class="box-card-meal">
+                                <div class="box-card-meal-img-container"><img src="images/tex-mex-meal-1.png" alt="tex"></div>
+                                <div class="box-card-meal-text">
+                                    <div class="box-card-meal-title">
+                                        <h3>Recette 3</h3>
+                                        <p>Description rapide de la recette.</p>
+                                    </div>
+                                    <div class="box-card-meal-bottom">
+                                        <span>15 min |</span>
+                                        <div class="box-card-meal-tags">
+                                            <ul>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                                <li>tag</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="btn-add add-meal">+</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="box-nb-pages-list">
+        <span class="box-nb-pages"><</span>
+        <span class="box-nb-pages">1</span>
+        <span class="box-nb-pages">2</span>
+        <span class="box-nb-pages">...</span>
+        <span class="box-nb-pages">10</span>
+        <span class="box-nb-pages">11</span>
+        <span class="box-nb-pages">></span>
+    </div>
+    <hr class="hr-footer">
+    <footer>
+        <div class="footer-left">
+            <img src="images/footer_logo.svg" alt="">
+            <div class="footer-left-right">
+                <ul>
+                    <li><h3>Nous contacter</h3></li>
+                    <li>tél:<a href="tel:+33102030405">01.88.88.88.88</a> </li>
+                    <li class="nowrap">mail: <a href="mailto:mainus.contact@minus.fr">minus.contact@minus.fr</a> </li>
+                </ul>
+                <div class="footer-rsc">
+                    <a href="#"><img src="images/logo_insta.svg" alt="insta" class="rsc24"></a>
+                    <a href="#"><img src="images/logo_youtube.svg" alt="youtube"></a>
+                    <a href="#"><img src="images/logo_facebook.svg" alt="facebook" class="rsc24"></a>
+                </div>
+            </div>
+        </div>
+    <div class="footer-right">
+        <ul>
+            <li><h3>Notre offre</h3></li>
+            <li><a href="">- Nos Box</a></li>
+            <li><a href="">- Recettes</a></li>
+            <li><a href="">- Engagements</a></li>
+        </ul>
+        <ul>
+            <li><h3>Aide</h3></li>
+            <li><a href="">- Mentions légales</a></li>
+            <li><a href="">- CGV</a></li>
+            <li><a href="">- FAQ</a></li>
+        </ul>
+        <div class="footer-newsletter">
+            <span>S'inscrire à notre newsletter</span>
+            <div class="footer-newsletter-input">
+                <input type="text" placeholder="Votre adresse email" id="footer-mail">
+                <input type="submit" value="" class="submit">
+            </div>
+        </div>
+    </div>
+       </div> 
+    </footer>
+
+</body>
+
+<div id="overlay-filtres">
+    <div onclick="off()" id="close-box-overlay"></div>
+    <div class="box-filter" id="overlay-filtres-div">
+        <h3>Âge</h3>
+        <ul>
+            <li>
+                <label for="2-3ans">2 - 3 ans</label>
+                <input type="checkbox" name="2-3ans" id="2-3ans">
+            </li>
+            <li>
+                <label for="3-4ans">3 - 4 ans</label>
+                <input type="checkbox" name="3-4ans" id="3-4ans">
+            </li>
+            <li>
+                <label for="4-6ans">4 - 6 ans</label>
+                <input type="checkbox" name="4-6ans" id="4-6ans">
+            </li>
+            <li>
+                <label for="6-7ans">6 - 7ans</label>
+                <input type="checkbox" name="6-7ans" id="6-7ans">
+            </li>
+        </ul>
+        <h3>Allergènes</h3>
+        <ul>
+            <li>
+                <label for="oeufs">sans oeufs</label>
+                <input type="checkbox" name="oeufs" id="oeufs">
+            </li>
+            <li>
+                <label for="gluten">sans gluten</label>
+                <input type="checkbox" name="gluten" id="gluten">
+            </li>
+            <li>
+                <label for="soja">sans soja</label>
+                <input type="checkbox" name="soja" id="soja">
+            </li>
+            <li>
+                <label for="noix">sans noix</label>
+                <input type="checkbox" name="noix" id="noix">
+            </li>
+            <li>
+                <label for="arachide">sans arachide</label>
+                <input type="checkbox" name="arachide" id="arachide">
+            </li>
+        </ul>
+        <h3>Préférences alimentaires</h3>
+        <ul>
+            <li>
+                <label for="omnivore">Omnivore</label>
+                <input type="checkbox" name="omnivore" id="omnivore">
+            </li>
+            <li>
+                <label for="flexitarien">Flexitarien</label>
+                <input type="checkbox" name="flexitarien" id="flexitarien">
+            </li>
+            <li>
+                <label for="piscivore">Piscivore</label>
+                <input type="checkbox" name="piscivore" id="piscivore">
+            </li>
+            <li>
+                <label for="vegetarien">Végétarien</label>
+                <input type="checkbox" name="vegetarien" id="vegetarien">
+            </li>
+            <li>
+                <label for="bio">Bio</label>
+                <input type="checkbox" name="bio" id="bio">
+            </li>
+        </ul>
+        <h3>Temps de préparation</h3>
+        <ul>
+            <li>
+                <label for="quart"> < 15min </label>
+                <input type="checkbox" name="quart" id="quart">
+            </li>
+            <li>
+                <label for="demi">15min - 30min</label>
+                <input type="checkbox" name="demi" id="demi">
+            </li>
+            <li>
+                <label for="heure">30min - 1h</label>
+                <input type="checkbox" name="heure" id="heure">
+            </li>
+            <li>
+                <label for="plus">> 1h</label>
+                <input type="checkbox" name="plus" id="plus">
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="box-fixed">
+    <div class="box-fixed-upper-container">
+        <div class="box-fixed-left">
+            <h3>Ma Box</h3>
+            <ul>
+                <li>
+                    <span>Recette 1</span>
+                    <span class="btn-suppr">-</span>
+                </li>
+                <li>
+                    <span>Recette 1</span>
+                    <span class="btn-suppr">-</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box-fixed-right">
+            <ul>
+                    <li>
+                    <span>Recette 1</span>
+                    <span class="btn-suppr">-</span>
+                </li>
+                <li>
+                    <span>Recette 1</span>
+                    <span class="btn-suppr">-</span>
+                </li>
+                <li>
+                    <span>Recette 1</span>
+                    <span class="btn-suppr">-</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="./informations.html"><span class="btn-rouge">Valider</span></a>
+</div>
+
+
+
+
+<script>
+    function on() {
+      document.getElementById("overlay-filtres").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay-filtres").style.display = "none";
+    }
+    </script>
+    
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minus</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="lib.css">
+        <link rel="stylesheet" type="text/css" href="style-connexion.css">
+        <link rel="stylesheet" href="./style-header.css">
+        <link rel="stylesheet" href="style-footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="btn-rouge btn-nav" href="informations.html">Je commande</a>
+            <ul class="nav_links">
+                <li><a href="./box.html">Nox Box</a></li>
+                <li><a href="#">Nos Recettes</a></li>
+            </ul>
+            <a href="./index.html"><img class="logo" src="images/header_logo.svg" alt="Logo">
+            <ul class="nav_links">
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <a href="./connexion.html" class="btn-rouge btn-nav">Mon Minus</a>
+        </nav>
+        <nav>
+            <div class="nav_links1">
+                <a><img class="logo" src="./images/header_logo.svg"></a>
+                <ul id="Menu_mobile" class="Menu_mobiiile">
+                    <p class="close">&times;</p>
+                    <li><a href="./box.html">Box</a></li>
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <span>Je commande</span>
+                    <a class="btn-vert">Mon Minus</a>
+                </ul>
+                <img class="menu-hamburger" src="./icones/Hamburger_icon.svg.png">
+            </div>
+        </nav>
+    </header>
+        <section>
+            <h2>Se Connecter</h2>
+                <form>
+                    <input type="texte" name="email" id="email" placeholder="Email" required> <br> <br>
+                    <input type="password" name="mot de pass" id="mot de passe" placeholder="Mot de passe" required ><br><br>
+                        <a href="#">Mot de passe oublié</a>
+                    <hr id="line-mpd-forget">
+                        <div id="btn-none">
+                            <a class="btn-vert" href="espace.html">Connexion</a>
+                        </div><br> 
+                        <p>Vous n'avez pas de compte ?</p>  
+                        <a href="./inscription.html">Inscrivez-vous</a>
+                    <hr id="line-inscrivez-vous"> 
+                </form> 
+        </section>
+        <hr class="hr-footer">
+        <footer>
+	        <div class="footer-left">
+	            <img src="images/footer_logo.svg" alt="">
+	            <div class="footer-left-right">
+	                <ul>
+	                    <li><h3>Nous contacter</h3></li>
+	                    <li>tél: 01.88.88.88.88</li>
+	                    <li class="nowrap">mail: minus.contact@minus.fr</li>
+	                </ul>
+	                <div class="footer-rsc">
+	                    <a href="#"><img src="images/logo_insta.svg" alt="insta" class="rsc24"></a>
+	                    <a href="#"><img src="images/logo_youtube.svg" alt="youtube"></a>
+	                    <a href="#"><img src="images/logo_facebook.svg" alt="facebook" class="rsc24"></a>
+	                </div>
+	            </div>
+	        </div>
+
+		    <div class="footer-right">
+		        <ul>
+		            <li><h3>Notre offre</h3></li>
+		            <li><a href="">- Nos Box</a></li>
+		            <li><a href="">- Recettres</a></li>
+		            <li><a href="">- Engagements</a></li>
+		        </ul>
+		        <ul>
+		            <li><h3>Aide</h3></li>
+		            <li><a href="">- Mentions légales</a></li>
+		            <li><a href="">- CGV</a></li>
+		            <li><a href="">- FAQ</a></li>
+		        </ul>
+		        <div class="footer-newsletter">
+		            <span>S'inscrire à notre newsletter</span>
+		            <div class="footer-newsletter-input">
+		                <input type="text" placeholder="Votre adresse email" id="footer-mail">
+		                <input type="submit" value="" class="submit">
+		            </div>
+		        </div>
+		    </div>
+    	</footer>
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks = document.querySelector("#Menu_mobile")
+            var span = document.getElementsByClassName("close")[0];
+            menuHamburger.onclick = function() {
+                navLinks.style.display = "flex";
+            }
+            span.onclick = function() {
+                navLinks.style.display = "none";
+            }
+    </script>
+    </body>
+</html>

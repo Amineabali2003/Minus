@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mon Minus - Espace Client</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="lib.css">
+		<link rel="stylesheet" type="text/css" href="style-footer.css">
+		<link rel="stylesheet" type="text/css" href="style-header.css">
+		<link rel="stylesheet" type="text/css" href="style-espace.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+        	<nav class="navbar">
+            	<a class="btn-rouge btn-nav" href="./informations.html">Je commande</a>
+            	<ul class="nav_links">
+                	<li><a href="./box.html">Nox Box</a></li>
+                	<li><a href="#">Nos Recettes</a></li>
+            	</ul>
+            	<a href="./index.html"><img class="logo" src="images/header_logo.svg" alt="Logo">
+            	<ul class="nav_links">
+                	<li><a href="#">Concept</a></li>
+                	<li><a href="#">FAQ</a></li>
+            	</ul>
+            	<a href="./connexion.html" class="btn-rouge btn-nav">Mon Minus</a>
+        	</nav>
+        	<nav>
+            	<div class="nav_links1">
+                	<a href="./index.html"><img class="logo" src="./images/header_logo.svg"></a>
+                	<ul id="Menu_mobile" class="Menu_mobiiile">
+                    	<p class="close">&times;</p>
+                    	<li><a href="./box.html">Box</a></li>
+                    	<li><a href="#">Recettes</a></li>
+                    	<li><a href="#">Concept</a></li>
+                    	<li><a href="#">FAQ</a></li>
+                    	<span><a href="./informations.html"> Je commande</a></span>
+                    	<a class="btn-vert" href="./connexion.html">Mon Minus</a>
+                	</ul>
+                	<img class="menu-hamburger" src="./icones/Hamburger_icon.svg.png">
+            	</div>
+        	</nav>
+    	</header>
+
+    	<script>
+        	const menuHamburger = document.querySelector(".menu-hamburger")
+        	const navLinks = document.querySelector("#Menu_mobile")
+        	var span = document.getElementsByClassName("close")[0];
+        	menuHamburger.onclick = function() {
+            	navLinks.style.display = "flex";
+        	}
+        	span.onclick = function() {
+            	navLinks.style.display = "none";
+        	}
+		</script>
+
+		<main>
+			<div class="page-headline"><h1>Mon Espace Minus</h1></div>
+
+			<div class="headline-mobile">
+				<h2>Abonnements</h2>
+				<a class="btn-rouge btn-dis" href="./modification-abonnement.html">Modifier</a>
+			</div>
+			<section class="subscription">
+				<div class="green-box">
+					<div><img src="images/subscription-img.jpg"></div>
+					<div class="sub-details">
+						<ul>
+							<li>Durée : 6 mois</li>
+							<li>Adresse : 47 rue du Progrès, 93000</li>
+							<li>1 Box / 2 semaines</li>
+							<li>Prochaine livraison : 24 février 2023, entre 13h00 et 16h30 </li>
+						</ul>
+						<a class="btn-rouge" href="./modification-abonnement.html">Gérer mon abonnement</a>
+					</div>
+				</div>
+				<div class="mybox">
+					<div class="mybox-details">
+						<a class="btn-rouge btn-dis" href="./box.html">Modifier ma box</a>
+						<div class="mybox-left">
+							<h2>Ma Box</h2>
+
+							<div class="meal-card">
+								<div class="meal-card-img">
+									<img src="images/tex-mex-meal-1.png">
+								</div>
+								<div class="meal-card-text">
+									<div class="meal-info-top">
+										<p class="titre-plat">Le taco</p>
+										<p class="readmore">Une tortilla de maïs garnie...</p>
+									</div>
+									<div class="meal-info-bottom">
+										<p>15 min</p>
+										<span>|</span>
+										<div class="allergenes">
+											<img src="icones/gluten.png">
+											<img src="icones/oeuf.png">
+											<img src="icones/porc.png">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="meal-card">
+								<div class="meal-card-img">
+									<img src="images/tex-mex-meal-2.png">
+								</div>
+								<div class="meal-card-text">
+									<div class="meal-info-top">
+										<p class="titre-plat">La quesadilla</p>
+										<p class="readmore">Tortilla garnie de fromage...</p>
+									</div>
+									<div class="meal-info-bottom">
+										<p>15 min</p>
+										<span>|</span>
+										<div class="allergenes">
+											<img src="icones/gluten.png">
+											<img src="icones/lait.png">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="meal-card">
+								<div class="meal-card-img">
+									<img src="images/tex-mex-meal-3.png">
+								</div>
+								<div class="meal-card-text">
+									<div class="meal-info-top">
+										<p class="titre-plat">Les chilaquiles</p>
+										<p class="readmore">Tortillas frits avec des oignons...</p>
+									</div>
+									<div class="meal-info-bottom">
+										<p>15 min</p>
+										<span>|</span>
+										<div class="allergenes">
+											<img src="icones/peanut.png">
+											<img src="icones/oeuf.png">
+											<img src="icones/lait.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mid-line"></div>
+
+						<div class="mybox-right">
+							<h2 class="hidden-text">Ma Box</h2>
+
+							<div class="meal-card">
+								<div class="meal-card-img">
+									<img src="images/tex-mex-meal-4.png">
+								</div>
+								<div class="meal-card-text">
+									<div class="meal-info-top">
+										<p class="titre-plat">Les enchiladas</p>
+										<p class="readmore">Des tortillas fourrées à la viande...</p>
+									</div>
+									<div class="meal-info-bottom">
+										<p>15 min</p>
+										<span>|</span>
+										<div class="allergenes">
+											<img src="icones/gluten.png">
+											<img src="icones/oeuf.png">
+											<img src="icones/beef.png">
+											<img src="icones/soja.png">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="meal-card">
+								<div class="meal-card-img">
+									<img src="images/tex-mex-meal-5.png">
+								</div>
+								<div class="meal-card-text">
+									<div class="meal-info-top">
+										<p class="titre-plat">Les Fajitas</p>
+										<p class="readmore">Tortillas farcies de viande...</p>
+									</div>
+									<div class="meal-info-bottom">
+										<p>15 min</p>
+										<span>|</span>
+										<div class="allergenes">
+											<img src="icones/poulet.png">
+											<img src="icones/peanut.png">
+											<img src="icones/lait.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modification">
+								<a class="btn-rouge" href="./box.html">Modifier ma box</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<section class="discover">
+				<h2>Suggestions de recettes</h2>
+
+				<div class="carte-verte">
+					<div class="carte-recette">
+						<div class="image-age">
+							<div class="age">
+								<h3>4</h3><span>ans</span>
+							</div>
+							<img src="images/repas1.jpg">
+						</div>
+						<div class="description">
+							<p class="titre-plat">Cassolettes de crevettes et poireau</p>
+							<p>Cassolettes crémeuses, simples...</p>
+							<div class="info-recette">
+								<p>30 min</p>
+								<div class="allergenes">
+									<img src="icones/crustace.png">
+									<img src="icones/lait.png">
+									<img src="icones/oeuf.png">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carte-recette">
+						<div class="image-age">
+							<div class="age">
+									<h3>3</h3><span>ans</span>
+							</div>
+							<img src="images/repas2.jpg">
+						</div>
+						<div class="description">
+							<p class="titre-plat">Macaroni aux trois fromages</p>
+							<p>Macaroni bio au cheddar, emm...</p>
+							<div class="info-recette">
+								<p>15 min</p>
+								<div class="allergenes">
+									<img src="icones/gluten.png">
+									<img src="icones/lait.png">
+									<img src="icones/oeuf.png">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carte-recette">
+						<div class="image-age">
+							<div class="age">
+								<h3>3</h3><span>ans</span>
+							</div>
+							<img src="images/repas3.jpg">
+						</div>
+						<div class="description">
+							<p class="titre-plat">Fusilli aux champignons de Paris...</p>
+							<p>la poitrine fumée francilienne va...</p>
+							<div class="info-recette">
+								<p>20 min</p>
+								<div class="allergenes">
+									<img src="icones/gluten.png">
+									<img src="icones/lait.png">
+									<img src="icones/oeuf.png">
+									<img src="icones/porc.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<section class="contact">
+				<h2>Vous rencontrez une difficulté?</h2>
+				<div class="vers-faq">
+					<p>Vous trouverez peut-être une réponse à votre question dans notre FAQ.</p>
+					<a class="btn-rouge" href="#">vers la FAQ</a>
+				</div>
+				<p>Sinon contactez-nous via le formulaire ci-dessous et notre équipe vous répondra au plus vite.</p>
+				<form class="formulaire-contact">
+					<input id="message" type="text" name="objet" placeholder="Objet">
+					<textarea id="message" rows=5>Décrivez-nous votre difficulté ici...</textarea>
+					<button type="submit" class="btn-rouge envoyer">Envoyer</button>
+				</form>
+			</section>
+
+		</main>
+
+		<hr class="hr-footer">
+
+		<footer>
+	        <div class="footer-left">
+	            <img src="images/footer_logo.svg" alt="logo">
+	            <div class="footer-left-right">
+	                <ul>
+	                    <li><h3>Nous contacter</h3></li>
+	                    <li>tél: 01.88.88.88.88</li>
+	                    <li class="nowrap">mail: minus.contact@minus.fr</li>
+	                </ul>
+	                <div class="footer-rsc">
+	                    <a href="#"><img src="images/logo_insta.svg" alt="insta" class="rsc24"></a>
+	                    <a href="#"><img src="images/logo_youtube.svg" alt="youtube"></a>
+	                    <a href="#"><img src="images/logo_facebook.svg" alt="facebook" class="rsc24"></a>
+	                </div>
+	            </div>
+	        </div>
+
+		    <div class="footer-right">
+		        <ul>
+		            <li><h3>Notre offre</h3></li>
+		            <li><a href="#">- Nos Box</a></li>
+		            <li><a href="#">- Recettres</a></li>
+		            <li><a href="#">- Engagements</a></li>
+		        </ul>
+		        <ul>
+		            <li><h3>Aide</h3></li>
+		            <li><a href="#">- Mentions légales</a></li>
+		            <li><a href="#">- CGV</a></li>
+		            <li><a href="#">- FAQ</a></li>
+		        </ul>
+		        <div class="footer-newsletter">
+		            <span>S'inscrire à notre newsletter</span>
+		            <div class="footer-newsletter-input">
+		                <input type="text" placeholder="Votre adresse email" id="footer-mail">
+		                <input type="submit" value="" class="submit">
+		            </div>
+		        </div>
+		    </div>
+    	</footer>
+
+	</body>
+
+</html>

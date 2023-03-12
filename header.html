@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./lib.css">
+    <link rel="stylesheet" href="./style-header.css">
+    <title>Sprint Minus</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="btn-rouge btn-nav" href="#">Je commande</a>
+            <ul class="nav_links">
+                <li><a href="./box.html">Nox Box</a></li>
+                <li><a href="#">Nos Recettes</a></li>
+            </ul>
+            <img class="logo" src="images/header_logo.svg" alt="Logo">
+            <ul class="nav_links">
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <a href="#" class="btn-rouge btn-nav">Mon Minus</a>
+        </nav>
+        <nav>
+            <div class="nav_links1">
+                <a><img class="logo" src="./images/header_logo.svg"></a>
+                <ul id="Menu_mobile" class="Menu_mobiiile">
+                    <p class="close">&times;</p>
+                    <li><a href="./box.html">Box</a></li>
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <span>Je commande</span>
+                    <a class="btn-vert">Mon Minus</a>
+                </ul>
+                <img class="menu-hamburger" src="./icones/Hamburger_icon.svg.png">
+            </div>
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector("#Menu_mobile")
+        var span = document.getElementsByClassName("close")[0];
+        menuHamburger.onclick = function() {
+            navLinks.style.display = "flex";
+        }
+        span.onclick = function() {
+            navLinks.style.display = "none";
+        }
+</script>
+</body>
+</html>
